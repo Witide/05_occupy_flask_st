@@ -1,0 +1,11 @@
+{% extends "basic.html" %}
+    {% block body %}
+        <table border=1>
+            
+        {% for job, percent in joblist %}
+            <tr><td>{{job}}</td><td>{{percent}}</td></tr>
+        {% endfor %}
+        </table>
+        <br />
+        Random Occupation: {{random_occ}}
+    {% endblock %}
